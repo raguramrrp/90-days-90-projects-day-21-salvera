@@ -390,8 +390,8 @@ export const SalaryExplorerPage: React.FC<SalaryExplorerPageProps> = ({ initialF
         </div>
       )}
 
-      {/* Visualizations Grid — Tiered Color System & Rich Tooltips */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      {/* Visualizations Grid — Full-Width Tiered Frequency Distribution */}
+      <div className="w-full">
         {/* Distribution Histogram */}
         <div className="bg-white p-5 rounded-md border border-[#E2E2D9] shadow-xs flex flex-col justify-between">
           <div>
@@ -419,7 +419,7 @@ export const SalaryExplorerPage: React.FC<SalaryExplorerPageProps> = ({ initialF
             </div>
           </div>
 
-          <div className="h-64 w-full mt-3">
+          <div className="h-68 w-full mt-3">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={distribution} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#E2E2D9" vertical={false} />
@@ -438,57 +438,6 @@ export const SalaryExplorerPage: React.FC<SalaryExplorerPageProps> = ({ initialF
                   ))}
                 </Bar>
               </BarChart>
-            </ResponsiveContainer>
-          </div>
-        </div>
-
-        {/* Experience vs Salary Scatter Plot */}
-        <div className="bg-white p-5 rounded-md border border-[#E2E2D9] shadow-xs flex flex-col justify-between">
-          <div>
-            <div className="flex items-center justify-between">
-              <h3 className="text-xs font-bold text-[#172B2A] tracking-tight">Experience vs Annual Compensation Scatter</h3>
-              <span className="text-[10px] text-[#707B75] font-mono">N = {scatterData.length} observations</span>
-            </div>
-            <div className="flex items-center space-x-3 text-[10px] mt-2 pb-2 border-b border-[#E2E2D9]/60">
-              <span className="flex items-center space-x-1">
-                <span className="w-2 h-2 rounded-full bg-[#648C7A]"></span>
-                <span className="text-[#707B75]">&lt; ₹15L</span>
-              </span>
-              <span className="flex items-center space-x-1">
-                <span className="w-2 h-2 rounded-full bg-[#172B2A]"></span>
-                <span className="text-[#172B2A] font-semibold">₹15L-30L</span>
-              </span>
-              <span className="flex items-center space-x-1">
-                <span className="w-2 h-2 rounded-full bg-[#B66B45]"></span>
-                <span className="text-[#B66B45] font-semibold">₹30L-50L</span>
-              </span>
-              <span className="flex items-center space-x-1">
-                <span className="w-2 h-2 rounded-full bg-[#D5B66D]"></span>
-                <span className="text-[#707B75]">&gt; ₹50L</span>
-              </span>
-            </div>
-          </div>
-
-          <div className="h-64 w-full mt-3">
-            <ResponsiveContainer width="100%" height="100%">
-              <ScatterChart margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#E2E2D9" />
-                <XAxis type="number" dataKey="experience" name="Experience" unit=" yrs" tick={{ fontSize: 9, fill: '#707B75' }} />
-                <YAxis type="number" dataKey="salary_lpa" name="Salary" unit="L" tick={{ fontSize: 9, fill: '#707B75' }} />
-                <Tooltip 
-                  formatter={(value: any, name: any) => [name === 'Salary' ? `₹${value} LPA` : `${value} yrs`, name]}
-                  contentStyle={{ backgroundColor: '#FFFFFF', borderColor: '#E2E2D9', fontSize: 11, borderRadius: 6, boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-                />
-                <Scatter data={scatterData}>
-                  {scatterData.map((entry, index) => (
-                    <Cell 
-                      key={`scatter-pt-${index}`}
-                      fill={entry.salary_lpa > 50 ? '#D5B66D' : entry.salary_lpa > 30 ? '#B66B45' : entry.salary_lpa > 15 ? '#172B2A' : '#648C7A'}
-                      fillOpacity={0.7}
-                    />
-                  ))}
-                </Scatter>
-              </ScatterChart>
             </ResponsiveContainer>
           </div>
         </div>

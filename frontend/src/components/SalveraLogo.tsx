@@ -101,9 +101,6 @@ export const SalveraLogo: React.FC<SalveraLogoProps> = ({
             <span className={`text-base font-extrabold tracking-wider ${isDark ? 'text-[#172B2A]' : 'text-white'}`}>
               SALVERA
             </span>
-            <span className="text-[9px] font-bold tracking-widest px-1 py-0.2 rounded bg-[#F3EFE6] text-[#B66B45] border border-[#E2E2D9] uppercase">
-              STUDIO
-            </span>
           </div>
           <span className={`text-[10px] tracking-tight font-medium mt-0.5 ${isDark ? 'text-[#707B75]' : 'text-[#D9DDD5]'}`}>
             Career & Financial Intelligence

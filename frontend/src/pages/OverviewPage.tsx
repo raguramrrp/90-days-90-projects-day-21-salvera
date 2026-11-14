@@ -164,43 +164,136 @@ export const OverviewPage: React.FC<OverviewPageProps> = ({ onNavigate }) => {
           </button>
         </div>
 
-        {/* Hero Section */}
+        {/* Hero Section — Fully Extended 2-Column Workstation Layout */}
         <div className="bg-white border border-[#E2E2D9] rounded-lg p-6 sm:p-8 shadow-xs">
-          <div className="max-w-3xl">
-            <span className="text-[10px] uppercase font-bold tracking-widest text-[#B66B45] bg-[#F3EFE6] px-2.5 py-1 rounded border border-[#E2E2D9]">
-              CAREER & FINANCIAL INTELLIGENCE
-            </span>
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-[#172B2A] tracking-tight mt-3">
-              Understand your market value. Make smarter career moves.
-            </h1>
-            <p className="text-xs sm:text-sm text-[#707B75] mt-2 leading-relaxed">
-              Explore technology compensation distributions, evaluate high-paying skill clusters, deconstruct job offers into true take-home cash, and inspect verified market percentiles.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            {/* Left 7 Columns: Extended Typography, Wide Search Inputs, & Trending Chips */}
+            <div className="lg:col-span-7 space-y-4">
+              <span className="text-[10px] uppercase font-bold tracking-widest text-[#B66B45] bg-[#F3EFE6] px-2.5 py-1 rounded border border-[#E2E2D9]">
+                CAREER & FINANCIAL INTELLIGENCE
+              </span>
+              <h1 className="text-2xl sm:text-3.5xl lg:text-4xl font-serif text-[#172B2A] tracking-tight leading-snug">
+                <span className="font-bold">Understand your market value.</span>{' '}
+                <span className="italic font-normal text-[#B66B45]">Make smarter career moves.</span>
+              </h1>
+              <p className="text-xs sm:text-sm text-[#707B75] leading-relaxed font-sans">
+                Explore technology compensation distributions, evaluate high-paying skill clusters, deconstruct job offers into true take-home cash, and inspect verified market percentiles.
+              </p>
 
-            {/* Quick Search Toolbar */}
-            <form onSubmit={handleHeroSearch} className="mt-6 flex flex-col sm:flex-row gap-2.5">
-              <input
-                type="text"
-                placeholder="Target Role (e.g. Data Analyst, Software Engineer, Machine Learning)"
-                value={selectedRole}
-                onChange={(e) => setSelectedRole(e.target.value)}
-                className="px-3.5 py-2 text-xs border border-[#E2E2D9] rounded-md bg-[#F3EFE6]/40 focus:bg-white focus:border-[#172B2A] outline-hidden flex-1 text-[#202B29]"
-              />
-              <input
-                type="text"
-                placeholder="City (e.g. Bengaluru, Chennai, Hyderabad, Pune)"
-                value={selectedCity}
-                onChange={(e) => setSelectedCity(e.target.value)}
-                className="px-3.5 py-2 text-xs border border-[#E2E2D9] rounded-md bg-[#F3EFE6]/40 focus:bg-white focus:border-[#172B2A] outline-hidden flex-1 sm:max-w-xs text-[#202B29]"
-              />
-              <button
-                type="submit"
-                className="bg-[#172B2A] hover:bg-[#254240] text-white text-xs font-semibold px-5 py-2 rounded-md transition flex items-center justify-center space-x-1.5 shadow-xs shrink-0"
-              >
-                <span>Explore Benchmark</span>
-                <ArrowRight className="w-3.5 h-3.5 text-[#D5B66D]" />
-              </button>
-            </form>
+              {/* Extended Search Inputs */}
+              <form onSubmit={handleHeroSearch} className="pt-2 flex flex-col sm:flex-row gap-2.5">
+                <input
+                  type="text"
+                  placeholder="Target Role (e.g. Data Analyst, Software Engineer, Machine Learning)"
+                  value={selectedRole}
+                  onChange={(e) => setSelectedRole(e.target.value)}
+                  className="px-3.5 py-2.5 text-xs border border-[#E2E2D9] rounded-md bg-[#F3EFE6]/40 focus:bg-white focus:border-[#172B2A] outline-hidden flex-1 sm:flex-2 text-[#202B29]"
+                />
+                <input
+                  type="text"
+                  placeholder="City (e.g. Bengaluru, Chennai, Hyderabad, Pune)"
+                  value={selectedCity}
+                  onChange={(e) => setSelectedCity(e.target.value)}
+                  className="px-3.5 py-2.5 text-xs border border-[#E2E2D9] rounded-md bg-[#F3EFE6]/40 focus:bg-white focus:border-[#172B2A] outline-hidden flex-1 text-[#202B29]"
+                />
+                <button
+                  type="submit"
+                  className="bg-[#172B2A] hover:bg-[#254240] text-white text-xs font-semibold px-5 py-2.5 rounded-md transition flex items-center justify-center space-x-1.5 shadow-xs shrink-0"
+                >
+                  <span>Explore Benchmark</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-[#D5B66D]" />
+                </button>
+              </form>
+
+              {/* Trending Quick Searches */}
+              <div className="flex flex-wrap items-center gap-1.5 pt-1 text-[11px] text-[#707B75]">
+                <span className="font-semibold text-[#172B2A]">Trending Searches:</span>
+                {[
+                  { r: 'Data Analyst', c: 'Bengaluru' },
+                  { r: 'Data Scientist', c: 'Hyderabad' },
+                  { r: 'Software Engineer', c: 'Chennai' },
+                  { r: 'Machine Learning Engineer', c: 'Pune' },
+                ].map((item, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => onNavigate('salary-explorer', { role_name: item.r, city: item.c })}
+                    className="px-2 py-0.5 rounded bg-[#F3EFE6] hover:bg-[#EAE4D5] text-[#172B2A] border border-[#E2E2D9] transition font-medium"
+                  >
+                    {item.r} in {item.c}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Right 5 Columns: Market Intelligence Snapshot Card filling the space */}
+            <div className="lg:col-span-5 bg-[#F3EFE6]/50 border border-[#E2E2D9] rounded-lg p-5 space-y-3">
+              <div className="flex items-center justify-between border-b border-[#E2E2D9]/70 pb-2">
+                <div className="flex items-center space-x-2">
+                  <span className="w-2 h-2 rounded-full bg-[#B66B45]"></span>
+                  <span className="text-xs font-bold text-[#172B2A] tracking-tight">Market Intelligence Snapshot</span>
+                </div>
+                <span className="text-[10px] font-mono text-[#648C7A] bg-white px-2 py-0.5 rounded border border-[#E2E2D9]">
+                  Verified Corpus
+                </span>
+              </div>
+
+              <div className="space-y-2 text-xs">
+                <div className="flex items-center justify-between p-2.5 rounded-md bg-white border border-[#E2E2D9]/60 shadow-2xs">
+                  <div>
+                    <div className="text-[10px] text-[#707B75]">National Median Tech Salary</div>
+                    <div className="font-bold text-[#172B2A] font-mono tabular-nums text-sm">
+                      ₹{summary ? (summary.median_annual_salary / 100000).toFixed(1) : '26.0'} LPA
+                    </div>
+                  </div>
+                  <span className="text-[10px] font-semibold text-[#648C7A] bg-[#F3EFE6] px-2 py-1 rounded border border-[#E2E2D9]/60">
+                    IQR: ₹{summary ? (summary.salary_p25 / 100000).toFixed(1) : '18.4'}L - {summary ? (summary.salary_p75 / 100000).toFixed(1) : '37.0'}L
+                  </span>
+                </div>
+
+                <div className="flex items-center justify-between p-2.5 rounded-md bg-white border border-[#E2E2D9]/60 shadow-2xs">
+                  <div>
+                    <div className="text-[10px] text-[#707B75]">High-Value Skill Clusters</div>
+                    <div className="font-semibold text-[#172B2A] text-xs">
+                      Cloud, Deep Learning & Systems
+                    </div>
+                  </div>
+                  <span className="text-[10px] font-bold text-[#B66B45] bg-[#F3EFE6] px-2 py-1 rounded border border-[#E2E2D9]/60">
+                    +38% Premium
+                  </span>
+                </div>
+
+                <div className="flex items-center justify-between p-2.5 rounded-md bg-white border border-[#E2E2D9]/60 shadow-2xs">
+                  <div>
+                    <div className="text-[10px] text-[#707B75]">Top Geography Differential</div>
+                    <div className="font-semibold text-[#172B2A] text-xs">
+                      Bengaluru & Hyderabad Hubs
+                    </div>
+                  </div>
+                  <span className="text-[10px] font-bold text-[#172B2A] font-mono">
+                    ₹29.2L Median
+                  </span>
+                </div>
+              </div>
+
+              <div className="pt-1 flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => onNavigate('salary-explorer')}
+                  className="flex-1 py-1.5 px-3 bg-[#172B2A] hover:bg-[#254240] text-white text-xs font-semibold rounded-md text-center transition flex items-center justify-center space-x-1 shadow-2xs"
+                >
+                  <span>Explore Salaries</span>
+                  <ArrowRight className="w-3 h-3 text-[#D5B66D]" />
+                </button>
+                <button
+                  type="button"
+                  onClick={() => onNavigate('offer-studio')}
+                  className="flex-1 py-1.5 px-3 bg-white hover:bg-[#F3EFE6] border border-[#E2E2D9] text-[#172B2A] text-xs font-semibold rounded-md text-center transition shadow-2xs"
+                >
+                  Offer Studio
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -247,8 +340,8 @@ export const OverviewPage: React.FC<OverviewPageProps> = ({ onNavigate }) => {
           </div>
         </div>
 
-        {/* Main Analytical Visualizations Row (Redesigned attractive & informative graphs) */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Main Analytical Visualization: Full-Width Tiered Financial Distribution Histogram */}
+        <div className="w-full">
           {/* Graph A: Tiered Financial Distribution Histogram */}
           <div className="bg-white border border-[#E2E2D9] p-5 rounded-lg shadow-xs flex flex-col justify-between">
             <div>
@@ -284,7 +377,7 @@ export const OverviewPage: React.FC<OverviewPageProps> = ({ onNavigate }) => {
               </span>
             </div>
 
-            <div className="h-68 mt-3 w-full">
+            <div className="h-72 mt-3 w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <ComposedChart data={distribution} margin={{ top: 15, right: 10, left: -20, bottom: 5 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#E2E2D9" vertical={false} />
@@ -324,118 +417,6 @@ export const OverviewPage: React.FC<OverviewPageProps> = ({ onNavigate }) => {
                 className="text-[#B66B45] hover:text-[#172B2A] hover:underline font-semibold flex items-center space-x-0.5"
               >
                 <span>Filter by Role & City</span>
-                <ArrowRight className="w-3 h-3" />
-              </button>
-            </div>
-          </div>
-
-          {/* Graph B: Multi-Cohort Interquartile Corridor Curve */}
-          <div className="bg-white border border-[#E2E2D9] p-5 rounded-lg shadow-xs flex flex-col justify-between">
-            <div>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-2">
-                  <span className="w-2 h-2 rounded-full bg-[#B66B45]"></span>
-                  <h2 className="text-sm font-bold text-[#172B2A] tracking-tight">Experience & Compensation Corridor</h2>
-                </div>
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-[#F3EFE6] text-[#B66B45] border border-[#E2E2D9]">
-                  +42% Mid-Level Inflection
-                </span>
-              </div>
-              <p className="text-xs text-[#707B75] mt-0.5">
-                Visualizing the middle 50% interquartile corridor (P25 to P75) alongside median salary trajectory.
-              </p>
-            </div>
-
-            {/* Legend for IQR Corridor */}
-            <div className="flex items-center space-x-4 text-[10px] mt-3 pb-2 border-b border-[#E2E2D9]/60">
-              <span className="flex items-center space-x-1.5">
-                <span className="w-3 h-1.5 bg-[#B66B45] rounded-full"></span>
-                <span className="text-[#B66B45] font-semibold">75th Percentile (Upper)</span>
-              </span>
-              <span className="flex items-center space-x-1.5">
-                <span className="w-3 h-2 bg-[#172B2A] rounded-xs"></span>
-                <span className="text-[#172B2A] font-bold">Median P50 (Trajectory)</span>
-              </span>
-              <span className="flex items-center space-x-1.5">
-                <span className="w-3 h-1 bg-[#707B75] rounded-full"></span>
-                <span className="text-[#707B75]">25th Percentile (Floor)</span>
-              </span>
-            </div>
-
-            <div className="h-68 mt-3 w-full">
-              <ResponsiveContainer width="100%" height="100%">
-                <ComposedChart 
-                  data={formattedExpData} 
-                  margin={{ top: 15, right: 15, left: -20, bottom: 5 }}
-                >
-                  <defs>
-                    <linearGradient id="iqrGradient" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#648C7A" stopOpacity={0.25}/>
-                      <stop offset="95%" stopColor="#F3EFE6" stopOpacity={0.05}/>
-                    </linearGradient>
-                  </defs>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#E2E2D9" vertical={false} />
-                  <XAxis 
-                    dataKey="bracket" 
-                    tick={{ fontSize: 10, fill: '#172B2A', fontWeight: 500 }} 
-                  />
-                  <YAxis 
-                    unit="L" 
-                    tick={{ fontSize: 10, fill: '#707B75' }} 
-                  />
-                  <Tooltip content={<CustomExperienceTooltip />} />
-                  
-                  {/* IQR Corridor Band */}
-                  <Area 
-                    type="monotone" 
-                    dataKey="p75" 
-                    stroke="none" 
-                    fill="url(#iqrGradient)" 
-                    name="IQR Band" 
-                  />
-
-                  {/* 75th Percentile Upper Trajectory */}
-                  <Line 
-                    type="monotone" 
-                    dataKey="p75" 
-                    stroke="#B66B45" 
-                    strokeWidth={2} 
-                    strokeDasharray="4 4"
-                    dot={{ fill: '#B66B45', r: 3 }}
-                    name="75th Percentile" 
-                  />
-
-                  {/* 25th Percentile Baseline */}
-                  <Line 
-                    type="monotone" 
-                    dataKey="p25" 
-                    stroke="#707B75" 
-                    strokeWidth={1.5} 
-                    dot={{ fill: '#707B75', r: 2.5 }}
-                    name="25th Percentile" 
-                  />
-
-                  {/* Median P50 Trajectory */}
-                  <Line 
-                    type="monotone" 
-                    dataKey="median" 
-                    stroke="#172B2A" 
-                    strokeWidth={2.8} 
-                    dot={{ fill: '#172B2A', stroke: '#F3EFE6', strokeWidth: 2, r: 4.5 }}
-                    activeDot={{ r: 6, fill: '#B66B45' }}
-                    name="Median (P50)" 
-                  />
-                </ComposedChart>
-              </ResponsiveContainer>
-            </div>
-
-            <div className="text-[11px] text-[#707B75] border-t border-[#E2E2D9] pt-2.5 mt-2 flex justify-between items-center">
-              <span>Fastest inflection: Years 2 through 5 show largest salary acceleration</span>
-              <button 
-                onClick={() => onNavigate('salary-estimator')}
-                className="text-[#B66B45] hover:text-[#172B2A] hover:underline font-semibold flex items-center space-x-0.5"
-              >
-                <span>Estimate Your Profile</span>
                 <ArrowRight className="w-3 h-3" />
               </button>
             </div>
