@@ -230,12 +230,7 @@ tests/test_services.py::test_pdf_generators PASSED                       [100%]
 
 ---
 
-## 11. Learning Outcomes & Resume Keywords
 
-**Technical Keywords:** Full-Stack Architecture, FastAPI, Scikit-learn, Regression Analysis, ColumnTransformer, Multi-Hot Encoding, Prediction Intervals, Data Provenance, Data Hygiene Auditing, Financial Decomposition, ReportLab PDF Generation, React 19, TypeScript, Recharts, Tailwind CSS, Windows Batch Scripting.
-
----
-
-## 12. License
+## 11. License
 
 This project is licensed under the [MIT License](LICENSE).
