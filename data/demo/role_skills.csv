@@ -1,0 +1,151 @@
+role_title,skill_name,frequency
+Data Analyst,SQL,0.79
+Data Analyst,Excel,0.56
+Data Analyst,Python,0.65
+Data Analyst,Power BI,0.63
+Data Analyst,Tableau,0.82
+Data Analyst,Statistics,0.8
+Data Analyst,Data Cleaning,0.88
+Business Analyst,Excel,0.58
+Business Analyst,SQL,0.71
+Business Analyst,Tableau,0.56
+Business Analyst,Power BI,0.63
+Business Analyst,Agile,0.74
+Business Analyst,Jira,0.56
+Business Analyst,Stakeholder Management,0.62
+Data Scientist,Python,0.79
+Data Scientist,SQL,0.75
+Data Scientist,Machine Learning,0.63
+Data Scientist,Scikit-learn,0.77
+Data Scientist,Statistics,0.85
+Data Scientist,Pandas,0.55
+Data Scientist,Deep Learning,0.85
+Business Intelligence Analyst,Power BI,0.81
+Business Intelligence Analyst,SQL,0.68
+Business Intelligence Analyst,DAX,0.61
+Business Intelligence Analyst,Data Warehousing,0.9
+Business Intelligence Analyst,Tableau,0.67
+Business Intelligence Analyst,ETL,0.58
+Business Intelligence Analyst,Excel,0.59
+Data Engineer,Python,0.86
+Data Engineer,SQL,0.77
+Data Engineer,Spark,0.85
+Data Engineer,Airflow,0.82
+Data Engineer,AWS,0.75
+Data Engineer,Docker,0.91
+Data Engineer,Kafka,0.69
+Data Engineer,Data Warehousing,0.75
+Python Developer,Python,0.86
+Python Developer,Django,0.78
+Python Developer,FastAPI,0.87
+Python Developer,SQL,0.76
+Python Developer,Git,0.81
+Python Developer,REST APIs,0.57
+Python Developer,Docker,0.63
+Python Developer,PostgreSQL,0.66
+Java Developer,Java,0.58
+Java Developer,Spring Boot,0.64
+Java Developer,Microservices,0.59
+Java Developer,SQL,0.65
+Java Developer,Git,0.79
+Java Developer,Docker,0.68
+Java Developer,Kubernetes,0.69
+Frontend Developer,JavaScript,0.63
+Frontend Developer,TypeScript,0.65
+Frontend Developer,React,0.9
+Frontend Developer,HTML/CSS,0.79
+Frontend Developer,Tailwind CSS,0.78
+Frontend Developer,Next.js,0.61
+Frontend Developer,Git,0.82
+Backend Developer,Node.js,0.61
+Backend Developer,Python,0.69
+Backend Developer,PostgreSQL,0.92
+Backend Developer,REST APIs,0.79
+Backend Developer,Redis,0.76
+Backend Developer,Docker,0.8
+Backend Developer,System Design,0.86
+Full Stack Developer,React,0.84
+Full Stack Developer,Node.js,0.63
+Full Stack Developer,TypeScript,0.56
+Full Stack Developer,PostgreSQL,0.67
+Full Stack Developer,MongoDB,0.65
+Full Stack Developer,Git,0.63
+Full Stack Developer,AWS,0.9
+Full Stack Developer,REST APIs,0.87
+Software Engineer,Java,0.67
+Software Engineer,Python,0.79
+Software Engineer,Data Structures,0.7
+Software Engineer,Algorithms,0.89
+Software Engineer,Git,0.72
+Software Engineer,System Design,0.65
+Software Engineer,SQL,0.64
+Machine Learning Engineer,Python,0.76
+Machine Learning Engineer,Scikit-learn,0.65
+Machine Learning Engineer,PyTorch,0.77
+Machine Learning Engineer,TensorFlow,0.88
+Machine Learning Engineer,MLOps,0.7
+Machine Learning Engineer,Docker,0.63
+Machine Learning Engineer,AWS,0.92
+Machine Learning Engineer,Statistics,0.74
+AI Engineer,Python,0.58
+AI Engineer,PyTorch,0.57
+AI Engineer,Transformers,0.59
+AI Engineer,LLMs,0.78
+AI Engineer,LangChain,0.84
+AI Engineer,Vector Databases,0.71
+AI Engineer,FastAPI,0.57
+Deep Learning Engineer,PyTorch,0.69
+Deep Learning Engineer,TensorFlow,0.92
+Deep Learning Engineer,Computer Vision,0.75
+Deep Learning Engineer,NLP,0.91
+Deep Learning Engineer,CUDA,0.87
+Deep Learning Engineer,Python,0.55
+Deep Learning Engineer,Linux,0.82
+Computer Vision Engineer,OpenCV,0.8
+Computer Vision Engineer,PyTorch,0.75
+Computer Vision Engineer,Computer Vision,0.65
+Computer Vision Engineer,Python,0.79
+Computer Vision Engineer,C++,0.59
+Computer Vision Engineer,Image Processing,0.71
+QA Engineer,Manual Testing,0.72
+QA Engineer,Selenium,0.9
+QA Engineer,Python,0.87
+QA Engineer,SQL,0.65
+QA Engineer,API Testing,0.74
+QA Engineer,Pytest,0.62
+QA Engineer,Jira,0.89
+Software Test Engineer,Automation Testing,0.87
+Software Test Engineer,Selenium,0.66
+Software Test Engineer,Java,0.79
+Software Test Engineer,Cypress,0.78
+Software Test Engineer,Postman,0.61
+Software Test Engineer,CI/CD,0.83
+Software Test Engineer,Git,0.75
+Cybersecurity Analyst,Network Security,0.84
+Cybersecurity Analyst,SIEM,0.75
+Cybersecurity Analyst,Vulnerability Assessment,0.55
+Cybersecurity Analyst,Linux,0.67
+Cybersecurity Analyst,Python,0.56
+Cybersecurity Analyst,Wireshark,0.89
+Cloud Engineer,AWS,0.88
+Cloud Engineer,Azure,0.86
+Cloud Engineer,Terraform,0.66
+Cloud Engineer,Linux,0.57
+Cloud Engineer,Networking,0.87
+Cloud Engineer,Docker,0.9
+Cloud Engineer,Python,0.58
+DevOps Engineer,Docker,0.73
+DevOps Engineer,Kubernetes,0.58
+DevOps Engineer,Jenkins,0.83
+DevOps Engineer,Terraform,0.83
+DevOps Engineer,CI/CD,0.6
+DevOps Engineer,AWS,0.73
+DevOps Engineer,Linux,0.75
+DevOps Engineer,Bash,0.65
+Site Reliability Engineer,Kubernetes,0.87
+Site Reliability Engineer,Linux,0.71
+Site Reliability Engineer,Prometheus,0.63
+Site Reliability Engineer,Grafana,0.75
+Site Reliability Engineer,Python,0.82
+Site Reliability Engineer,Go,0.62
+Site Reliability Engineer,System Design,0.67

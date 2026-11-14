@@ -1,0 +1,18 @@
+{
+  "dataset_name": "SALVERA Benchmark Tech Salary Corpus 2024-2025",
+  "source_name": "SALVERA Synthetic Benchmark Calibration Engine",
+  "source_url": "local://data/demo/salary_records.csv",
+  "licence": "Creative Commons CC-BY 4.0",
+  "collection_period": "2024-2025",
+  "record_count": 5292,
+  "total_roles": 21,
+  "total_locations": 7,
+  "total_skills": 90,
+  "is_synthetic": true,
+  "synthetic_disclosure": "DEMO DATA \u2014 SYNTHETIC EXAMPLE, NOT OBSERVED MARKET SALARY.",
+  "currencies_represented": [
+    "INR",
+    "USD"
+  ],
+  "normalization_base": "INR Annualized (1 USD = 83.50 INR)"
+}

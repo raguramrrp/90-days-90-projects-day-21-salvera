@@ -1,0 +1,22 @@
+canonical_title,category,description
+Data Analyst,Data & Analytics,"Analyzes raw data to discover operational trends, business insights, and KPI patterns."
+Business Analyst,Data & Analytics,Bridges technology and business strategy through requirement modeling and data reporting.
+Data Scientist,Data & Analytics,"Builds statistical, algorithmic, and predictive models from structured and unstructured data."
+Business Intelligence Analyst,Data & Analytics,"Designs enterprise semantic models, dimensional marts, and executive dashboards."
+Data Engineer,Data & Analytics,"Constructs reliable data pipelines, distributed storage, and real-time streaming infrastructure."
+Python Developer,Software Development,"Develops backend services, automated scripts, and RESTful APIs using Python frameworks."
+Java Developer,Software Development,"Builds enterprise backend architectures, microservices, and transaction-safe systems."
+Frontend Developer,Software Development,"Creates responsive, accessible user interfaces and web applications using modern web technologies."
+Backend Developer,Software Development,"Engineers scalable server-side systems, high-concurrency database querying, and API contracts."
+Full Stack Developer,Software Development,Delivers end-to-end applications covering modern frontend frameworks and backend databases.
+Software Engineer,Software Development,Solves core computer science engineering challenges across system architecture and algorithms.
+Machine Learning Engineer,AI & ML,Deploys machine learning models into high-throughput production pipelines with MLOps standards.
+AI Engineer,AI & ML,"Integrates modern generative AI architectures, foundational LLMs, and multi-modal workflows."
+Deep Learning Engineer,AI & ML,"Designs neural networks for complex computer vision, speech, and natural language modeling."
+Computer Vision Engineer,AI & ML,"Builds spatial recognition, edge inference, and camera sensor video pipelines."
+QA Engineer,Quality & Security,"Verifies software quality through regression automation, unit validation, and test harness execution."
+Software Test Engineer,Quality & Security,Constructs test frameworks and end-to-end integration test suites across CI/CD pipelines.
+Cybersecurity Analyst,Quality & Security,"Defends organizational infrastructure against zero-day threats, intrusions, and protocol breaches."
+Cloud Engineer,Infrastructure,"Architects resilient, secure public cloud infrastructure and identity boundaries."
+DevOps Engineer,Infrastructure,"Automates deployment pipelines, container orchestration, and continuous delivery systems."
+Site Reliability Engineer,Infrastructure,"Ensures uptime, fault tolerance, distributed observability, and latency SLA adherence."

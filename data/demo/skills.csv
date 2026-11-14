@@ -1,0 +1,91 @@
+skill_name,normalized_name,category
+API Testing,api_testing,Testing & QA
+AWS,aws,Cloud & DevOps
+Agile,agile,General
+Airflow,airflow,Data Engineering
+Algorithms,algorithms,General
+Automation Testing,automation_testing,Testing & QA
+Azure,azure,Cloud & DevOps
+Bash,bash,Cloud & DevOps
+C++,c++,Programming
+CI/CD,ci/cd,Cloud & DevOps
+CUDA,cuda,Machine Learning
+Computer Vision,computer_vision,Machine Learning
+Cypress,cypress,Testing & QA
+DAX,dax,BI & Visualization
+Data Cleaning,data_cleaning,Data Engineering
+Data Structures,data_structures,General
+Data Warehousing,data_warehousing,Data Engineering
+Deep Learning,deep_learning,Machine Learning
+Django,django,Frameworks & Libraries
+Docker,docker,Cloud & DevOps
+ETL,etl,Data Engineering
+Excel,excel,BI & Visualization
+FastAPI,fastapi,Frameworks & Libraries
+Git,git,General
+Go,go,Programming
+Grafana,grafana,Cloud & DevOps
+HTML/CSS,html/css,Frameworks & Libraries
+Image Processing,image_processing,Machine Learning
+Java,java,Programming
+JavaScript,javascript,Programming
+Jenkins,jenkins,Cloud & DevOps
+Jira,jira,General
+Kafka,kafka,Data Engineering
+Kubernetes,kubernetes,Cloud & DevOps
+LLMs,llms,Machine Learning
+LangChain,langchain,Machine Learning
+Linux,linux,Cloud & DevOps
+MLOps,mlops,Machine Learning
+Machine Learning,machine_learning,Machine Learning
+Manual Testing,manual_testing,Testing & QA
+Microservices,microservices,Software Development
+MongoDB,mongodb,Database & Query
+NLP,nlp,Machine Learning
+Network Security,network_security,Quality & Security
+Networking,networking,General
+Next.js,next.js,Frameworks & Libraries
+Node.js,node.js,Frameworks & Libraries
+OpenCV,opencv,Machine Learning
+Pandas,pandas,Programming
+PostgreSQL,postgresql,Database & Query
+Postman,postman,Testing & QA
+Power BI,power_bi,BI & Visualization
+Prometheus,prometheus,Cloud & DevOps
+PyTorch,pytorch,Machine Learning
+Pytest,pytest,Testing & QA
+Python,python,Programming
+REST APIs,rest_apis,Software Development
+React,react,Frameworks & Libraries
+Redis,redis,Database & Query
+SIEM,siem,Quality & Security
+SQL,sql,Database & Query
+Scikit-learn,scikit-learn,Machine Learning
+Selenium,selenium,Testing & QA
+Spark,spark,Data Engineering
+Spring Boot,spring_boot,Frameworks & Libraries
+Stakeholder Management,stakeholder_management,General
+Statistics,statistics,Machine Learning
+System Design,system_design,General
+Tableau,tableau,BI & Visualization
+Tailwind CSS,tailwind_css,Frameworks & Libraries
+TensorFlow,tensorflow,Machine Learning
+Terraform,terraform,Cloud & DevOps
+Transformers,transformers,Machine Learning
+TypeScript,typescript,Programming
+Vector Databases,vector_databases,Machine Learning
+Vulnerability Assessment,vulnerability_assessment,Quality & Security
+Wireshark,wireshark,Quality & Security
+MongoDB,mongodb,Database & Query
+PostgreSQL,postgresql,Database & Query
+Redis,redis,Database & Query
+Snowflake,snowflake,Data Warehousing
+GCP,gcp,Cloud & DevOps
+GraphQL,graphql,Frameworks & Libraries
+Angular,angular,Frameworks & Libraries
+Rust,rust,Programming
+C++,c++,Programming
+Go,go,Programming
+R,r,Programming
+Prompt Engineering,prompt_engineering,Machine Learning
+Fine-Tuning,fine-tuning,Machine Learning

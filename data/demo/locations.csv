@@ -1,0 +1,8 @@
+city,state,country,country_code,tier,col_index,sal_mult
+Bengaluru,Karnataka,India,IND,Tier 1,115.0,1.16
+Hyderabad,Telangana,India,IND,Tier 1,105.0,1.06
+Pune,Maharashtra,India,IND,Tier 1,102.0,1.03
+Chennai,Tamil Nadu,India,IND,Tier 1,100.0,1.0
+Mumbai,Maharashtra,India,IND,Tier 1,125.0,1.12
+Delhi NCR,Delhi / Haryana,India,IND,Tier 1,110.0,1.08
+Coimbatore,Tamil Nadu,India,IND,Tier 2,82.0,0.85

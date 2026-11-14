@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "trained_at": "2026-11-14T20:33:40.934742",
+  "best_model": "GradientBoostingRegressor",
+  "residual_std": 418828.90443743154,
+  "models_comparison": {
+    "LinearRegression": {
+      "algorithm": "LinearRegression",
+      "mae": 359650.21,
+      "rmse": 495647.77,
+      "r2_score": 0.8777,
+      "median_abs_error": 283862.17,
+      "train_samples": 4233,
+      "test_samples": 1059
+    },
+    "RandomForestRegressor": {
+      "algorithm": "RandomForestRegressor",
+      "mae": 387573.47,
+      "rmse": 528026.69,
+      "r2_score": 0.8612,
+      "median_abs_error": 305676.83,
+      "train_samples": 4233,
+      "test_samples": 1059
+    },
+    "GradientBoostingRegressor": {
+      "algorithm": "GradientBoostingRegressor",
+      "mae": 281543.46,
+      "rmse": 418866.25,
+      "r2_score": 0.9126,
+      "median_abs_error": 190984.78,
+      "train_samples": 4233,
+      "test_samples": 1059
+    }
+  },
+  "top_features": [
+    {
+      "feature": "experience_years",
+      "importance": 0.504
+    },
+    {
+      "feature": "Skill: PyTorch",
+      "importance": 0.1274
+    },
+    {
+      "feature": "Role: Site Reliability Engineer",
+      "importance": 0.0368
+    },
+    {
+      "feature": "Role: AI Engineer",
+      "importance": 0.0317
+    },
+    {
+      "feature": "City: Coimbatore",
+      "importance": 0.0244
+    },
+    {
+      "feature": "Role: QA Engineer",
+      "importance": 0.0233
+    },
+    {
+      "feature": "Role: Software Test Engineer",
+      "importance": 0.0176
+    },
+    {
+      "feature": "Skill: Power BI",
+      "importance": 0.0158
+    },
+    {
+      "feature": "Skill: TensorFlow",
+      "importance": 0.0157
+    },
+    {
+      "feature": "Role: Deep Learning Engineer",
+      "importance": 0.0135
+    },
+    {
+      "feature": "industry_Fintech",
+      "importance": 0.013
+    },
+    {
+      "feature": "Skill: Selenium",
+      "importance": 0.0123
+    }
+  ]
+}
