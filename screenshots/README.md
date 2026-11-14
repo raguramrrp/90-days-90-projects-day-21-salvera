@@ -1,15 +1,9 @@
-# SALVERA Screenshots
+# SALVERA Workstation Visual Captures
 
-This directory contains application screenshots and visual walkthrough artifacts for portfolio presentation.
+Core visual artifacts illustrating the redesign of the SALVERA Career & Financial Intelligence Workstation.
 
-### Recommended Captures:
-1. `01-overview.png`: Executive Market Overview with distribution histogram and quick filters.
-2. `02-salary-explorer.png`: Salary Explorer with percentile metrics and dynamic records table.
-3. `03-skill-intelligence.png`: Skill premiums, co-occurrences, and pairwise comparison matrix.
-4. `04-role-explorer.png`: Cross-role compensation ladders, career progression, and target transitions.
-5. `05-location-intelligence.png`: City salary premiums, purchasing-power adjustments, and rent indices.
-6. `06-offer-studio.png`: Financial deconstruction (Stated CTC vs take-home vs net disposable cash).
-7. `07-salary-estimator.png`: ML compensation prediction with 90% confidence interval & feature explanations.
-8. `08-career-planner.png`: Role-to-role skill gap analysis and step-by-step learning roadmap.
-9. `09-market-watch.png`: Role and skill tracking watchlist with baseline salary delta tracking.
-10. `10-data-insights.png`: Dataset provenance, missingness audit, and synthetic data disclosure.
+### 4 Main Platform Showcases:
+1. **`01_overview_workstation.png`**: Executive Workstation Overview with centered brand identity, editorial serif headline, quick search filters, and live Market Intelligence Snapshot.
+2. **`02_find_jobs_discovery.png`**: India-First Tech Job Discovery feed with multi-factor filters, split-pane listing, and live salary benchmark alignment corridor (P25–P75).
+3. **`03_salary_explorer_distribution.png`**: Full-width tiered compensation frequency distribution histogram (0–15L, 15–30L, 30–50L, >50L) with percentile metrics.
+4. **`04_offer_studio_waterfall.png`**: Offer Comparison Studio featuring the stage-by-stage horizontal compensation waterfall deconstruction (*"Where Your Compensation Goes"*).

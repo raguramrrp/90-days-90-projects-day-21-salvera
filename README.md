@@ -15,6 +15,16 @@
 
 ---
 
+## Visual Workstation Highlights
+
+| 01. Executive Workstation Overview | 02. India-First Tech Job Discovery |
+| :---: | :---: |
+| ![Executive Workstation Overview](screenshots/01_overview_workstation.png) | ![India Tech Job Discovery](screenshots/02_find_jobs_discovery.png) |
+| **03. Salary Explorer & Distribution** | **04. Offer Studio — Compensation Waterfall** |
+| ![Salary Explorer & Distribution](screenshots/03_salary_explorer_distribution.png) | ![Offer Studio Compensation Waterfall](screenshots/04_offer_studio_waterfall.png) |
+
+---
+
 ## 1. Problem Statement & Motivation
 
 Traditional salary platforms primarily present flat average numbers. However, technology compensation in India and global markets is multi-dimensional:

@@ -55,3 +55,9 @@ frontend/.cache/
 *.swo
 .DS_Store
 Thumbs.db
+
+# Automation & Local Captures
+capture_screenshots.py
+project screesshots/
+project screenshots/
+*.log
